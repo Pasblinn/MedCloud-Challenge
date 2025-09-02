@@ -70,8 +70,8 @@ This system was developed as a solution for MedCloud's technical challenge, impl
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/[your-username]/medcloud-patient-management.git
-cd medcloud-patient-management
+git clone https://github.com/Pasblinn/MedCloud-Challenge.git
+cd MedCloud-Challenge
 ```
 
 ### 2. Run with Docker
@@ -295,6 +295,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
+**Pablo Tadini**
+- Email: pablosotomaior@live.com
+- GitHub: [@Pasblinn](https://github.com/Pasblinn)
+- Project: [MedCloud Challenge](https://github.com/Pasblinn/MedCloud-Challenge)
+
 Developed as a solution for the [MedCloud Development Challenge Nine](https://github.com/medcloudbr/development-challenge-nine).
 
 ---
@@ -316,4 +321,4 @@ This project meets all challenge requirements:
 
 ---
 
-**Developed with ❤️ for the MedCloud Challenge**
+**Developed with ❤️ by Pablo Tadini for the MedCloud Challenge**

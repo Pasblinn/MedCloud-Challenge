@@ -3,6 +3,11 @@
     "version": "1.0.0",
     "description": "Backend API for Patient Management System",
     "main": "src/server.js",
+    "author": "Pablo Tadini <pablosotomaior@live.com>",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Pasblinn/MedCloud-Challenge.git"
+    },
     "scripts": {
       "start": "node src/server.js",
       "dev": "nodemon src/server.js",

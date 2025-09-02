@@ -2,6 +2,11 @@
   "name": "patient-management-frontend",
   "version": "1.0.0",
   "description": "Modern Patient Management System built with React and Material-UI",
+  "author": "Pablo Tadini <pablosotomaior@live.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pasblinn/MedCloud-Challenge.git"
+  },
   "dependencies": {
     "@mui/material": "^5.14.20",
     "@mui/icons-material": "^5.14.19",
