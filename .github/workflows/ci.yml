@@ -19,20 +19,31 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '18'
+        cache: 'npm'
         
-    - name: Test Frontend Build
+    - name: Install Frontend Dependencies
       working-directory: ./frontend
-      run: |
-        npm install
-        npm run build
+      run: npm ci
         
+    - name: Build Frontend
+      working-directory: ./frontend
+      run: npm run build
+      
+    - name: Test Frontend
+      working-directory: ./frontend
+      run: npm test -- --coverage --watchAll=false
+        
+    - name: Install Backend Dependencies
+      working-directory: ./backend
+      run: npm ci
+      
     - name: Test Backend
       working-directory: ./backend
-      run: |
-        npm install
-        echo "Backend dependencies installed successfully"
+      run: npm test
+      
+    - name: Lint Backend
+      working-directory: ./backend
+      run: npm run lint
         
-    - name: Test Docker Compose
-      run: |
-        docker-compose config
-        echo "Docker compose configuration is valid"
+    - name: Validate Docker Compose
+      run: docker compose config
