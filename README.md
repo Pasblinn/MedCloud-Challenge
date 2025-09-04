@@ -152,6 +152,11 @@ npm test                      # Run tests
 ### Environment Variables
 
 #### Backend (.env)
+```bash
+# Copy the example file and edit as needed
+cp backend/.env.example backend/.env
+```
+
 ```env
 NODE_ENV=development
 PORT=3001
