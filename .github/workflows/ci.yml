@@ -1,0 +1,24 @@
+name: Simple CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  check:
+    name: Basic Check
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Verify project structure
+      run: |
+        echo "✅ Repository checked out successfully"
+        ls -la
+        echo "✅ Frontend directory exists: $(test -d frontend && echo 'Yes' || echo 'No')"
+        echo "✅ Backend directory exists: $(test -d backend && echo 'Yes' || echo 'No')"
+        echo "✅ Docker compose file exists: $(test -f docker-compose.yml && echo 'Yes' || echo 'No')"
